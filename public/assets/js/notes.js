@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+let { notesArr } = require('../../../db/db.json');
+console.log(notesArr);
 
-function createNote(body, notesArr) {
+function createNewNote(body, notesArr) {
     const note = body;
     notesArr.push(note);
     fs.writeFileSync(
@@ -34,6 +36,6 @@ function deleteNote(id, notes) {
 }
 
 module.exports = {
-    createNote,
+    createNewNote,
     deleteNote
 };
