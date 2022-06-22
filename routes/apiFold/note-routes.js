@@ -21,4 +21,4 @@ route.delete('/notes/:id', async (req, res) => {
     res.json(notesArr);
 });
 
-module.exports = route;
+module.exports = routes;

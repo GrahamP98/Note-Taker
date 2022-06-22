@@ -3,4 +3,4 @@ const noteRoute = require('./note-routes');
 
 route.use(noteRoute);
 
-module.exports = route;
+module.exports = routes;
